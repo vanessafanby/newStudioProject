@@ -1,0 +1,231 @@
+.references img {
+  width: 150px;
+}
+
+body {
+  background-color: antiquewhite;
+  color: cadetblue;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* main title */
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  color: cadetblue;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 140px;
+  margin: 14px auto 0;
+  border-bottom: 3px dotted cadetblue;
+}
+
+main > h3:first-of-type {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #5f8f91;
+}
+
+/* section cards */
+section {
+  background: rgba(255, 255, 255, 0.38);
+  border: 3px dotted cadetblue;
+  border-radius: 28px;
+  padding: 24px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 14px rgba(95, 158, 160, 0.08);
+}
+
+/* section headings */
+section h2 {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 2px dotted cadetblue;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+section h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #4d7f81;
+  border-left: 4px dotted cadetblue;
+  padding-left: 12px;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 1.08rem;
+  max-width: 75ch;
+}
+
+a {
+  color: cadetblue;
+  font-weight: 600;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: #4d7f81;
+}
+
+/* lists */
+ul,
+ol {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border: 2px dotted rgba(95, 158, 160, 0.7);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.32);
+  max-width: 75ch;
+}
+
+/* images */
+img {
+  width: 280px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 16px;
+  border: 2px dotted cadetblue;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* image row */
+.image-row {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.image-row img {
+  width: 320px;
+}
+
+/* single image */
+section > img {
+  display: block;
+  margin: 16px auto;
+}
+
+/* references */
+.references ul {
+  display: grid;
+  gap: 12px;
+}
+
+/* timeline */
+.timelineDetails {
+  width: 100%;
+}
+
+.timelineDetails > summary::marker {
+  font-size: 1.5rem;
+}
+
+summary > h4 {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.lineBox {
+  margin: 1rem 0;
+  padding-left: 0;
+  border-left: none;
+}
+
+.lineBox > details {
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.lineBox > details:last-of-type {
+  margin-bottom: 0;
+}
+
+/* remove timeline dots */
+.lineBox > details::after {
+  display: none;
+}
+
+/* timeline spacing */
+.lineBox > details > * {
+  margin-left: 1rem;
+}
+
+.lineBox > details > summary {
+  margin-left: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4d7f81;
+}
+
+.timelineCategory {
+  font-weight: bold;
+}
+
+.timelineCategory:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.indent {
+  margin-left: 1rem;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  main {
+    padding: 24px 16px 50px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  section {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .image-row img {
+    width: 100%;
+  }
+}
+/* Here, I have used a calming antiquewhite background as it creates a soft and warm tone, which feels more calming. 
+  Furthermore, this helps the page feel more relaxed which is also the main goal I'm aiming for in my future project.
+  I paired it with cadetblue text to create a gentle contrast that is still readable but not too strong or overwhelming. 
+  The Dosis font was selected because its rounded giving it a more calm and friendly tone, alike the colour I've chosen for all my other webpages. 
+  To add on, I made all the webpages feel calm with the same font to make the interface feel less formal and more inviting to explore. */
